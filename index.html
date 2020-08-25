@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Border Radius Previewer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Border Radius Previewer</div>
+        <input type="text" class="border-top-left-radius" id="border-top-left-radius" onkeyup="updateBorder()">
+        <input type="text" class="border-top-right-radius" id="border-top-right-radius" onkeyup="updateBorder()">
+        <input type="text" class="border-bottom-right-radius" id="border-bottom-right-radius" onkeyup="updateBorder()">
+        <input type="text" class="border-bottom-left-radius" id="border-bottom-left-radius" onkeyup="updateBorder()">
+        <div class="area" id="area"></div>
+    </div>
+
+</body>
+<script>
+
+    function updateBorder() { 
+        const area = document.getElementById("area");
+
+        area.style.borderTopLeftRadius = document.getElementById('border-top-left-radius').value === "0" ? "0px" : `${document.getElementById('border-top-left-radius').value}%`;
+        
+        area.style.borderTopRightRadius = document.getElementById('border-top-right-radius').value === "0" ? "0px" : `${document.getElementById('border-top-right-radius').value}%`;
+        
+        area.style.borderBottomRightRadius = document.getElementById('border-bottom-right-radius').value === "0" ? "0px" : `${document.getElementById('border-bottom-right-radius').value}%`;
+        
+        area.style.borderBottomLeftRadius = document.getElementById('border-bottom-left-radius').value === "0" ? "0px" : `${document.getElementById('border-bottom-left-radius').value}%`;
+
+
+    
+    }
+</script>
+</html>

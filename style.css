@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+.title{
+    font-size: 3em;
+    color: #fff;
+    padding: 20px;
+    margin-left: 26%;
+}
+
+
+.area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10rem;
+    height: 10rem;
+    background: #ffffff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-color: dodgerblue;
+    box-shadow: 0 0 100px dodgerblue;
+
+}
+
+.border-top-left-radius{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width:60px;
+}
+
+.border-top-right-radius{
+    position: absolute;
+    top: 25%;
+    left: 62%;
+    width:60px ;
+}
+
+.border-bottom-right-radius{
+    position: absolute;
+    top: 72%;
+    left: 62%;
+    width:60px ;
+}
+
+.border-bottom-left-radius{
+    position: absolute;
+    top: 72%;
+    left: 35%;
+    width:60px ;
+}
+
+input{
+    width: 150px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 10px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px dodgerblue;
+}
