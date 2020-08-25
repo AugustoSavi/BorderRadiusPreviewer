@@ -15,7 +15,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com),. From
 
 ```bash
 # Clone esse repositorio
-$ git clone https://github.com/AugustoSavi/Calculator.git
+$ git clone https://github.com/AugustoSavi/BorderRadiusPreviewer.git
 
 # Caminhe ate a pasta 
 $ cd BorderRadiusPreviewer
